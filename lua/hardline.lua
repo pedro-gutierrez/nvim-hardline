@@ -229,8 +229,8 @@ function M.setup(user_options)
   if user_options then
     M.options = vim.tbl_extend('force', M.options, user_options)
   end
-  set_theme()
-  set_hlgroups()
+  --set_theme()
+  --set_hlgroups()
   set_statusline()
   if M.options.bufferline then
     set_bufferline()
